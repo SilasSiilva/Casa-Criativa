@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section id="intro">
+  <header>
+    <a href="/">
+      <img src="https://i.imgur.com/27pdZLL.png" alt="imagem da logomarca">
+    </a>
+  </header>
+  <main>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing
+    </p>
+
+    <p>
+      labore et dolore magna aliqua.<strong>
+        Ut enim ad minim veniam, ullamco</strong>labore et dolore magna aliqua Ut enim ad minim veniam, ullamco
+    </p>
+    <p>
+      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in nisi ut aliquip ex ea
+      commodo consequat. Duis aute
+    </p>
+  </main>
+  <div class="buttons">
+    <button onclick="onOff()">
+      + adcionar Ideias</button>
+    <a href="/ideias" class="button">
+      Ver Ideias</a>
+  </div>
+
+  <footer>
+    <p id="footer">Lorem ❤ ipsum
+    </p>
+  </footer>
+
+</section>
+
+<section class="ultimas_ideias">
+
+  {%include 'all_ideas.html'%}
+
+</section>
+{% endblock %}

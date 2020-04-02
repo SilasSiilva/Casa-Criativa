@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+{% set bodyId = "page-ideias"%}
+
+
+
+{% block title%}
+
+<title>Ideias</title>
+
+{% endblock title%}
+
+{% block content %}
+<header>
+    <a href="/">
+        <img src="https://i.imgur.com/27pdZLL.png" alt="Imagem da logo marca">
+    </a>
+    <nav>
+        <li><a href="/">Inicio</a></li>
+        <li class="button" onclick=" onOff()"><a href=""></a> Nova Ideia</li>
+    </nav>
+</header>
+<section id="title">
+    <p>Em exibição</p>
+    <h1>Ideias</h1>
+</section>
+<main>
+    <section id="ideias">
+
+        {%include 'all_ideas.html'%}
+
+    </section>
+</main>
+<footer>
+    <p id="footer">Lorem ❤ ipsum </p>
+</footer>
+{% endblock %}
